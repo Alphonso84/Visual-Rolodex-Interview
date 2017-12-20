@@ -5,9 +5,9 @@
 //  Created by user on 12/20/17.
 //  Copyright © 2017 Alphonso. All rights reserved.
 //
-
+import UIKit
 import Foundation
-class API: ViewController {
+class API {
     
    
     func parseJSON() {
@@ -33,5 +33,8 @@ class API: ViewController {
         task.resume()
         
     }
+    
+    
+
 
 }
