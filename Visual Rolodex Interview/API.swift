@@ -7,7 +7,11 @@
 //
 import UIKit
 import Foundation
+
+
+
 class API {
+    
     
    
     func parseJSON() {
