@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-var RolodexUsers = [[String:Any]]()
+var RolodexUsers = [PersonCard]()
 class API {
     
    
@@ -21,23 +21,19 @@ class API {
         let session = URLSession.shared
         let task = session.dataTask(with: (dataForURL)!) { (data, response, error) in
             print("Start")
-            guard let unwrappedData = data else {return}
+            guard data != nil else {return}
             do {
-                
-                let jsonData = try JSONSerialization.jsonObject(with: unwrappedData, options: []) as? [[String:Any]]
-                //JSONDATA IS AN ARRAY OF DICTIONARIES
-                RolodexUsers = jsonData!
+                let jsonDecoder = JSONDecoder()
+                //DECODABLE TRANSFORMS JSON DATA INTO AN ARRAY OF TYPE PERSONCARD
+                let jsonData = try jsonDecoder.decode(Array<PersonCard>.self, from: data!)
+                //ASSIGNING JSONDATA TO ARRAY OF PERSONCARD SWIFT INSTANCE
+                RolodexUsers = jsonData
                 
                 
  //PRINTS JSON DATA TO CONSOLE
-                print(RolodexUsers)
-                //JSONDATA DICTIONARIES
-                
-                //print(RolodexDictionary["email"] as! String)
-                
-                
-                
-                
+                print(RolodexUsers[20].firstName)
+                print(RolodexUsers[20].lastName)
+                print(RolodexUsers[20].email)
             } catch {
                 print(error)
             }

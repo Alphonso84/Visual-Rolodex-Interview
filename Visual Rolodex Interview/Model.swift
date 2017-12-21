@@ -7,24 +7,24 @@
 //
 import UIKit
 
-struct PersonCard {
-    var lastName: String
-    var firstName: String
-    var email: String
-    var company: String
-    var startDate: String
-    var bio: String
-    var avatar: UIImage
+struct PersonCard: Codable {
+    let lastName: String
+    let firstName: String
+    let email: String
+    let company: String
+    let startDate: String
+    let bio: String
+    let avatar: String
 
     
-    init (lastName: String, firstName: String, email: String, company: String, startDate: String, bio: String, avatar: UIImage) {
-        self.lastName = lastName
-        self.firstName = firstName
-        self.email = email
-        self.company = company
-        self.startDate = startDate
-        self.bio = bio
-        self.avatar = avatar
-        
-    }
+//    init (lastName: String, firstName: String, email: String, company: String, startDate: String, bio: String, avatar: String) {
+//        self.lastName = lastName
+//        self.firstName = firstName
+//        self.email = email
+//        self.company = company
+//        self.startDate = startDate
+//        self.bio = bio
+//        self.avatar = avatar
+//
+//    }
 }
