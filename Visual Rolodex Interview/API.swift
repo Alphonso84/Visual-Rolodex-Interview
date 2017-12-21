@@ -9,9 +9,8 @@ import UIKit
 import Foundation
 
 
-
+var RolodexUsers = [[String:Any]]()
 class API {
-    
     
    
     func parseJSON() {
@@ -27,8 +26,15 @@ class API {
                 
                 let jsonData = try JSONSerialization.jsonObject(with: unwrappedData, options: []) as? [[String:Any]]
                 //JSONDATA IS AN ARRAY OF DICTIONARIES
-               let RolodexUsers = jsonData!
+                RolodexUsers = jsonData!
+                
                 print(RolodexUsers)
+                //JSONDATA DICTIONARIES
+                
+                //print(RolodexDictionary["email"] as! String)
+                
+                
+                
                 
             } catch {
                 print(error)
