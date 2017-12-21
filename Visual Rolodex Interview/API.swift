@@ -28,6 +28,8 @@ class API {
                 //JSONDATA IS AN ARRAY OF DICTIONARIES
                 RolodexUsers = jsonData!
                 
+                
+ //PRINTS JSON DATA TO CONSOLE
                 print(RolodexUsers)
                 //JSONDATA DICTIONARIES
                 
