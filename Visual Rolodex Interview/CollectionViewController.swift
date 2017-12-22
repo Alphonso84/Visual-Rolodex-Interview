@@ -31,7 +31,7 @@ class CollectionView: UIViewController, UICollectionViewDataSource, UICollection
    
     
     override func viewDidLoad() {
-       
+      
     }
     
 //    //Number of Sections in CollectionView

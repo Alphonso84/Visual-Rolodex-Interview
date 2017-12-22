@@ -13,6 +13,7 @@ var RolodexUsers = [PersonCard]()
 
 
 class API: UIViewController {
+    
     @IBAction func getDataButton(_ sender: Any) {
         parseJSON()
     }
