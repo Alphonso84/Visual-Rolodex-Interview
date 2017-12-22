@@ -10,13 +10,17 @@ import Foundation
 
 
 var RolodexUsers = [PersonCard]()
-class API {
+
+
+class API: UIViewController {
+    @IBAction func getDataButton(_ sender: Any) {
+        parseJSON()
+    }
     
    
     func parseJSON() {
         let baseURL = "https://s3-us-west-2.amazonaws.com/udacity-mobile-interview/CardData.json"
-         let dataForURL = URL(string: baseURL)
-        
+        let dataForURL = URL(string: baseURL)
         //URL SESSION
         let session = URLSession.shared
         let task = session.dataTask(with: (dataForURL)!) { (data, response, error) in
@@ -28,13 +32,9 @@ class API {
                 let jsonData = try jsonDecoder.decode(Array<PersonCard>.self, from: data!)
                 //ASSIGNING JSONDATA TO ARRAY OF PERSONCARD SWIFT INSTANCE
                 RolodexUsers = jsonData
-                
-                
- //PRINTS JSON DATA TO CONSOLE
-                print(RolodexUsers[20].firstName)
-                print(RolodexUsers[20].lastName)
-                print(RolodexUsers[20].email)
-            } catch {
+                //PRINTS JSON DATA TO CONSOLE
+                 print(RolodexUsers[0].avatar)
+               } catch {
                 print(error)
             }
         }

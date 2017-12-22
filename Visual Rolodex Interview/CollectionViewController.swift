@@ -9,11 +9,27 @@
 import Foundation
 import UIKit
 
-class CollectionView: UIViewController {
+class CollectionView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return RolodexUsers.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+     
+        return cell
+    }
+    
    
     
     override func viewDidLoad() {
-        API().parseJSON()
+       
     }
     
 //    //Number of Sections in CollectionView
