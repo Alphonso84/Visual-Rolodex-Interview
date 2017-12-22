@@ -121,7 +121,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gzE-ci-qYZ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gzE-ci-qYZ" customClass="MyCell" customModule="Visual_Rolodex_Interview" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="31.5" width="303" height="555"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -150,6 +150,11 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cellLabel" destination="PJA-GJ-F0g" id="Kya-IU-EFD"/>
+                                            <outlet property="cellTextField" destination="xlK-fq-HDs" id="w68-8k-woO"/>
+                                            <outlet property="imageCell" destination="Mhm-Yh-bmM" id="1ht-D9-rjg"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

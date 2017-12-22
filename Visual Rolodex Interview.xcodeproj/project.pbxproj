@@ -15,6 +15,7 @@
 		899AB2811FEB256D00FA644B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AB2801FEB256D00FA644B /* CollectionViewController.swift */; };
 		899AB2831FEB28A400FA644B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AB2821FEB28A400FA644B /* Model.swift */; };
 		89E172C31FECDC0600605539 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E172C21FECDC0600605539 /* TableViewController.swift */; };
+		89E172C91FECF74900605539 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E172C81FECF74900605539 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		899AB2801FEB256D00FA644B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		899AB2821FEB28A400FA644B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		89E172C21FECDC0600605539 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		89E172C81FECF74900605539 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				89E172C21FECDC0600605539 /* TableViewController.swift */,
 				899AB27E1FEB1E0D00FA644B /* API.swift */,
 				899AB2801FEB256D00FA644B /* CollectionViewController.swift */,
+				89E172C81FECF74900605539 /* CollectionViewCell.swift */,
 				899AB2701FEB164300FA644B /* Main.storyboard */,
 				899AB2731FEB164300FA644B /* Assets.xcassets */,
 				899AB2751FEB164300FA644B /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			files = (
 				899AB2811FEB256D00FA644B /* CollectionViewController.swift in Sources */,
 				899AB27F1FEB1E0D00FA644B /* API.swift in Sources */,
+				89E172C91FECF74900605539 /* CollectionViewCell.swift in Sources */,
 				899AB26D1FEB164300FA644B /* AppDelegate.swift in Sources */,
 				89E172C31FECDC0600605539 /* TableViewController.swift in Sources */,
 				899AB2831FEB28A400FA644B /* Model.swift in Sources */,
