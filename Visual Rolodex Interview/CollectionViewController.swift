@@ -19,12 +19,18 @@ class CollectionView: UIViewController, UICollectionViewDataSource, UICollection
         return RolodexUsers.count
     }
     
+    //Cell Config
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //imageURL is the path to each RolodexUser picture
+        let imageURL = "\(RolodexUsers[indexPath.row].avatar)"
+        //Concatenated string for First and Last Name
         let firstNameLastName = "\(RolodexUsers[indexPath.row].firstName) \(RolodexUsers[indexPath.row].lastName)"
+        
         let cell: MyCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCell
         cell.cellTextField.text = RolodexUsers[indexPath.row].bio
         cell.cellLabel.text = firstNameLastName
-     
+        //cell.imageCell.image =
+       print(imageURL)
         return cell
     }
     

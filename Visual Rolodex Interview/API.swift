@@ -18,7 +18,7 @@ class API: UIViewController {
         parseJSON()
     }
     
-   
+  // URL SESSION JSON METHOD
     func parseJSON() {
         let baseURL = "https://s3-us-west-2.amazonaws.com/udacity-mobile-interview/CardData.json"
         let dataForURL = URL(string: baseURL)
